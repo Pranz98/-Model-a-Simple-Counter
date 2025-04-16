@@ -1,0 +1,48 @@
+xrun: 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.09-s001: Started on Aug 07, 2024 at 00:46:08 EDT
+xrun
+	-Q
+	-unbuffered
+	-timescale 1ns/1ns
+	-sysv
+	-access +rw
+	design.sv
+	testbench.sv
+	Top level design units:
+		counter_test
+Loading snapshot worklib.counter_test:sv .................... Done
+xcelium> source /xcelium23.09/tools/xcelium/files/xmsimrc
+xcelium> run
+time=0 clk=0 rst_=0 load=0 enable=0 data=00000 count=00000
+time=5000 clk=1 rst_=0 load=0 enable=0 data=00000 count=00000
+time=10000 clk=0 rst_=1 load=0 enable=0 data=00000 count=00000
+time=15000 clk=1 rst_=1 load=0 enable=0 data=00000 count=00000
+time=20000 clk=0 rst_=1 load=1 enable=0 data=10101 count=00000
+time=25000 clk=1 rst_=1 load=1 enable=0 data=10101 count=10101
+time=30000 clk=0 rst_=1 load=0 enable=1 data=10101 count=10101
+time=35000 clk=1 rst_=1 load=0 enable=1 data=10101 count=10110
+time=40000 clk=0 rst_=1 load=0 enable=1 data=10101 count=10110
+time=45000 clk=1 rst_=1 load=0 enable=1 data=10101 count=10111
+time=50000 clk=0 rst_=1 load=0 enable=1 data=10101 count=10111
+time=55000 clk=1 rst_=1 load=0 enable=1 data=10101 count=11000
+time=60000 clk=0 rst_=1 load=0 enable=1 data=10101 count=11000
+time=65000 clk=1 rst_=1 load=0 enable=1 data=10101 count=11001
+time=70000 clk=0 rst_=1 load=0 enable=1 data=10101 count=11001
+time=75000 clk=1 rst_=1 load=0 enable=1 data=10101 count=11010
+time=80000 clk=0 rst_=1 load=0 enable=0 data=10101 count=11010
+time=85000 clk=1 rst_=1 load=0 enable=0 data=10101 count=11010
+time=90000 clk=0 rst_=1 load=1 enable=0 data=01010 count=11010
+time=95000 clk=1 rst_=1 load=1 enable=0 data=01010 count=01010
+time=100000 clk=0 rst_=1 load=0 enable=1 data=01010 count=01010
+time=105000 clk=1 rst_=1 load=0 enable=1 data=01010 count=01011
+time=110000 clk=0 rst_=1 load=0 enable=1 data=01010 count=01011
+time=115000 clk=1 rst_=1 load=0 enable=1 data=01010 count=01100
+time=120000 clk=0 rst_=1 load=0 enable=1 data=01010 count=01100
+time=125000 clk=1 rst_=1 load=0 enable=1 data=01010 count=01101
+time=130000 clk=0 rst_=1 load=0 enable=1 data=01010 count=01101
+time=135000 clk=1 rst_=1 load=0 enable=1 data=01010 count=01110
+time=140000 clk=0 rst_=1 load=0 enable=1 data=01010 count=01110
+time=145000 clk=1 rst_=1 load=0 enable=1 data=01010 count=01111
+Simulation stopped via $stop(1) at time 150 NS + 0
+./testbench.sv:67         $stop;
+xcelium> TOOL:	xrun	23.09-s001: Exiting on Aug 07, 2024 at 00:46:09 EDT  (total: 00:00:01)
